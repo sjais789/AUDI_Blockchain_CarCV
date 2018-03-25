@@ -1,0 +1,43 @@
+/**
+ * AUDI Car data transfer network models
+ */
+namespace org.acme.transfering
+
+asset Cardetails identified by tokenno {
+    o String tokenno
+    o String description
+    o String Qwerty
+    o Double quantity
+    o String seatno
+    o Double mileage
+    o String vin 
+  o String v5c 
+  o String modelVariant 
+  o String modelVersion 
+  o String bodyType
+  o Integer revenueWeight 
+  o Integer cylinderCapacity 
+    --> Customer owner
+}
+
+participant Customer identified by customerId {
+    o String customerId
+    o String firstName
+    o String lastName
+}
+
+transaction Transfer {
+    --> Cardetails cardetails
+    --> Customer newOwner
+}
+
+event TransferNotification {
+    --> Cardetails cardetails
+}
+
+transaction RemoveHighQuantity {
+}
+
+event RemoveNotification {
+    --> Cardetails cardetails
+}

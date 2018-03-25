@@ -1,0 +1,19 @@
+query selectCardetails{
+  description: "Select all the cardata details"
+  statement:
+      SELECT org.acme.transfering.Cardetails
+}
+
+query select car data details ByQwerty {
+  description: "Select all cardetails based on their main transfer"
+  statement:
+      SELECT org.acme.transfering.Cardetails
+          WHERE (mainQwerty==_$qwerty)
+}
+
+query selectCommoditiesByOwner {
+  description: "Select all cars based on their owner"
+  statement:
+      SELECT org.acme.transfering.Cardetails
+          WHERE (owner == _$owner)
+}
