@@ -103,15 +103,10 @@ Browse your REST API at http://localhost:3000/explorer
 ```
 
 Open a web browser and navigate to http://localhost:3000/explorer
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Feel free to fork and clone the project.
 
 
 ## Authors
